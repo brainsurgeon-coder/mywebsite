@@ -178,6 +178,16 @@ details.nav-dropdown ul a:hover{color:var(--gold);background:var(--gold-soft);}
 .hero-text-card a{color:var(--gold);font-weight:600;text-decoration:none;}
 .hero-text-card a:hover{text-decoration:underline;}
 
+/* Harvard fellowship photo — static image, top-right of the bio card */
+.hero-badge-photo{
+  float:right;width:clamp(110px,16vw,160px);margin:0 0 14px 14px;
+  border-radius:var(--radius);border:1px solid var(--border);
+  object-fit:cover;aspect-ratio:1/1;
+}
+@media (max-width:480px){
+  .hero-badge-photo{float:none;width:100%;margin:0 0 16px;aspect-ratio:16/9;}
+}
+
 .lang-row{display:flex;gap:18px;margin-top:18px;flex-wrap:wrap;}
 .lang-row a, .lang-row span{
   font-family:var(--font-display);font-size:15px;text-decoration:none;color:var(--text-muted);
@@ -356,8 +366,9 @@ ol.achievements li a:hover{text-decoration:underline;}
         <img src="best_brain_spine_surgeon_mumbai.PNG" alt="Dr Hrishikesh Sarkar, Neurosurgeon">
       </div>
       <div class="hero-text-card">
-        <p>Welcome to my website. I am a Neurosurgeon (Brain &amp; Spine Surgeon), researcher, innovator, author, and Harvard Global Healthcare Leadership Program alumnus, passionate about advancing neurosurgical care through clinical excellence, innovation, education, and technology.</p>
-        <p> Explore this site to learn about brain and spine conditions, treatment options, surgical outcomes, and life after neurosurgical procedures.</p>
+        <img class="hero-badge-photo" src="harvard.jpg" alt="Dr Hrishikesh Sarkar receiving the Harvard Medical School Global Healthcare Leadership Fellowship">
+        <p>Welcome to my website. I am a Senior Consultant Neurosurgeon (Brain &amp; Spine Surgeon), researcher, innovator, author, and Harvard Global Healthcare Leadership Program alumnus, passionate about advancing neurosurgical care through clinical excellence, innovation, education, and technology.</p>
+        <p>This site is entirely self-coded from scratch. Explore it to learn about brain and spine conditions, treatment options, surgical outcomes, and life after neurosurgical procedures.</p>
         <p>Thank you for visiting — please feel free to <a href="contact.html">get in touch</a>, I'd be happy to help.</p>
         <div class="lang-row">
           <a href="hindi.html">हिंदी में</a>
