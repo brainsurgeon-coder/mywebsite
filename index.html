@@ -307,7 +307,7 @@ I am Dr. Hrishikesh Sarkar, Senior Consultant Neurosurgeon (Brain & Spine Surgeo
 
 This website, entirely self-coded from scratch, showcases my clinical work, research, patient stories, and educational resources. Explore to learn more about brain and spine conditions, treatment options, surgical outcomes, and life after neurosurgical procedures.
 
-Thank you for visiting. Please feel free to get in touch through the contact links provided—I would be happy to help. <a href="contact.html"><span class="w3-text-yellow">Contact</span></a> by clicking the links provided. Would be happy to help!</h5>
+Thank you for visiting. Please feel free to get in touch through the contact links provided—I would be happy to help. <a href="contact.html"><span class="w3-text-yellow">Contact</span></a> by clicking the links provided.</h5>
           </div>
           <div class="w3-display-bottomleft w3-text-yellow"><h4><strong><a href="hindi.html">हिंदी में</a></strong></h4></div>
           <div class="w3-display-bottommiddle w3-text-orange"><h4><a href="marathi.html"><strong>मराठीत</strong></a></h4></div>
@@ -574,55 +574,34 @@ RESPONSIVE
 ===================================================== -->
 
 
+  <style>
+/* =====================================================
+   RESPONSIVE VIDEO GALLERY
+===================================================== */
 
-<style>
-@media screen and (max-width:768px){
-
-  .hero-text{
-      font-size:15px !important;
-      line-height:1.8 !important;
-      padding:15px !important;
-  }
-
-  .video-grid{
-      display:grid !important;
-      grid-template-columns:1fr !important;
-      gap:18px !important;
-  }
-
-  .w3-display-middle,
-  .w3-display-bottomleft,
-  .w3-display-bottommiddle,
-  .w3-display-bottomright{
-      position:static !important;
-      transform:none !important;
-      display:block !important;
-      width:100% !important;
-      text-align:center !important;
-      padding:15px !important;
-  }
-
-  .w3-bar-item{
-      width:100% !important;
-      text-align:center !important;
-  }
-
-  h2{
-      font-size:28px !important;
-  }
-
-  h3{
-      font-size:20px !important;
-  }
-
-  .w3-xxlarge{
-      font-size:30px !important;
-  }
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:24px;
 }
-</style>  
 
-<div class="video-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;"> 
-  <!-- TITLE -->
+/* Tablet */
+@media screen and (max-width:1024px){
+    .video-grid{
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:768px){
+    .video-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+}
+</style>
+
+<div class="video-grid">  <!-- TITLE -->
 
   <h2 style="color:#ffd700;text-align:center;font-size:clamp(26px,5vw,42px);margin-bottom:12px;font-family:Arial,sans-serif;">
   Awareness and Advocacy for Neurosurgical Conditions - By the Patients </h2>
@@ -874,6 +853,7 @@ RESPONSIVE
     </div>
 
   </div>
+</div>
 
 </div>
 
